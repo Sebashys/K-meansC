@@ -167,7 +167,7 @@ int main(int argc, char *argv[]){
 		ScopedTimer t;
 	   
 		tie(c,a) = k_means(data,clusters,iteraciones,epsilon);
-		cout <<   t.elapsed()<< "ms" << endl;
+		cout <<   t.elapsed()<< endl;
     }
 	
 
