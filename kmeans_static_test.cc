@@ -41,11 +41,11 @@ pair<DataFrame,vector<size_t>> k_means( const DataFrame& data, size_t k, size_t 
 	size_t contador;
 	size_t epsilon = numeric_limits<size_t>::max();
 
-	
+	int i = 0;
 	for (Point& cluster : means){ // cluster -> means
-		size_t i = indices(random_number_generator);
-		//cout <<'|' << i << '|' <<endl;
+		
 		cluster = data[i];//data rango i nvariable tener en cuenta ultimo rango y primero		
+		i++;
 	}
 
 
